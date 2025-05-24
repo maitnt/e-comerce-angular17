@@ -8,9 +8,9 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './form.component.scss'
 })
 export class FormComponent {
-  inputVal: string = '';
-  dynamicVal: string = '';
-  show() {
-    this.dynamicVal = this.inputVal;
+  count = 0;
+  counter(type: string) {
+    type === 'incr' ? this.count++ : this.count--;
   }
+
 }
