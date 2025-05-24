@@ -7,6 +7,5 @@
     </div>
 </div>
 
-<p>first value: {{a}}</p>
-<p>second value: {{b}}</p>
-<p>sum: {{a + b}}  </p>
+<input type="text" (keydown.shift.y)="isShift()">
+<input type="text" (keydown)="isShift($event)">

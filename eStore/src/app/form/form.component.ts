@@ -13,7 +13,11 @@ export class FormComponent {
     type === 'incr' ? this.count++ : this.count--;
   }
 
-  a = 1;
-  b = 2;
-
+  isShift(event?: KeyboardEvent) {
+    console.log('Shift key pressed');
+    if (event?.shiftKey && event?.key === "Y") {
+      console.log('Shift + Y detected');
+      
+    }
+  }
 }
