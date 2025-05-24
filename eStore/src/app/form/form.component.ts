@@ -13,4 +13,7 @@ export class FormComponent {
     type === 'incr' ? this.count++ : this.count--;
   }
 
+  a = 1;
+  b = 2;
+
 }
