@@ -41,3 +41,24 @@ p {
     border-radius: 5px;
     border: 1px solid cyan;
 }
+
+@property --scale {
+    syntax: "<number>";
+    inherits: false;
+    initial-value: 1;
+}
+
+.animated-button {
+    transform: rotate(20deg) scale(var(--scale));
+    margin: 100px;
+    animation: pulse 500ms alternate infinite;
+}
+
+@keyframes pulse {
+    0% {
+        --scale: 2;
+    }
+    100% {
+        --scale: 3;
+    }
+}
